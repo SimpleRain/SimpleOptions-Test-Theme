@@ -64,8 +64,8 @@ function sof_register_required_plugins() {
 			'required' 					=> true,
 			'version' 					=> '0.0.2',
 			'force_activation' 	=> true,
-			'external_url' 			=> 'https://github.com/SimpleRain/SimpleOptions/',
-			'source' 						=> 'https://github.com/SimpleRain/SimpleOptions/archive/0.0.3.zip', // The plugin source
+			'external_url' 			=> 'http://github.com/SimpleRain/SimpleOptions/',
+			'source' 						=> 'http://github.com/SimpleRain/SimpleOptions/archive/0.0.3.zip', // The plugin source
 
 		),
 
