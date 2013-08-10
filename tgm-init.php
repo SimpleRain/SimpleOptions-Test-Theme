@@ -59,13 +59,13 @@ function sof_register_required_plugins() {
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository
 		array(
-			'name' 							=> 'SimpleOptions',
-			'slug' 							=> 'SimpleOptions',
-			'required' 					=> true,
-			'version' 					=> '0.0.2',
+			'name' 			=> 'SimpleOptions',
+			'slug' 			=> 'SimpleOptions',
+			'required' 		=> true,
+			'version' 		=> '0.0.2',
 			'force_activation' 	=> true,
-			'external_url' 			=> 'http://github.com/SimpleRain/SimpleOptions/',
-			'source' 						=> 'http://github.com/SimpleRain/SimpleOptions/archive/0.0.3.zip', // The plugin source
+			'external_url' 		=> 'http://github.com/SimpleRain/SimpleOptions/',
+			'source' 		=> 'http://github.com/SimpleRain/SimpleOptions/archive/0.0.6.zip', // The plugin source
 
 		),
 
