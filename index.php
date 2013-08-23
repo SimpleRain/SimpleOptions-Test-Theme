@@ -1,23 +1,16 @@
 <?php
-/* SMOF TEST */
+/* SOF TEST */
 
 get_header(); ?>
 
 	<article>
 
 		<header class="entry-header">
-			<h1>Simple Options Framework</h1>
+			<h1>SOF TEST</h1>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 
-		<pre>
-		<?php
-
-		?>
-
-
-		</pre>
 		<pre>
 		<?php
 /*
