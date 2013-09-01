@@ -40,7 +40,7 @@ if (current_user_can('demo')) {
 	function remove_menus () {
     if(is_user_logged_in() && current_user_can('demo')) {
       global $menu;
-      $restricted = array(__('Posts'), __('Profile'), __('Dashboard'), __('Settings'), __('Media'), __('Contact'), __('Links'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins'));
+      $restricted = array(__('Posts'), __('Profile'), __('Settings'), __('Media'), __('Contact'), __('Links'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins'));
       end ($menu);
       while (prev($menu)) {
         $value = explode(' ',$menu[key($menu)][0]);
@@ -96,4 +96,4 @@ if (current_user_can('demo')) {
 	}
 	add_action('login_head', 'prepopulate_username_js');
 
-	add_filter( 'login_redirect', create_function( '$url,$query,$user', 'return admin_url()."admin.php?page=simple-options";' ), 10, 3 );	
+	add_filter( 'login_redirect', create_function( '$url,$query,$user', 'return admin_url()."index.php";' ), 10, 3 );	
