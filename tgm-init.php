@@ -42,8 +42,8 @@ function sof_register_required_plugins() {
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
-	$plugins = array(
-
+	$plugin = 
+		array(
 		// This is an example of how to include a plugin pre-packaged with a theme
 /*		array(
 			'name'     				=> 'Simple Sidebars', // The plugin name
@@ -58,18 +58,24 @@ function sof_register_required_plugins() {
 		*/
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository
-		array(
 			'name' 			=> 'Simple Options Framework',
 			'slug' 			=> 'simple-options',
 			'required' 		=> true,
-			'version' 		=> '0.0.2',
+			'version' 		=> '0.6.1',
 			'force_activation' 	=> true,
 			'external_url' 		=> 'http://github.com/SimpleRain/SimpleOptions/',
-			'source' 		=> 'http://github.com/SimpleRain/SimpleOptions/archive/0.5.0.zip', // The plugin source
+			'source' 		=> 'http://github.com/SimpleRain/SimpleOptions/archive/0.6.1.zip', // The plugin source
 
-		),
+		
 
 	);
+
+
+	if (defined('SOF_DIR')) {
+		$parts = str_replace('/options/','', SOF_DIR);
+		$parts = explode("/", $parts);
+		$plugin['slug'] = end($parts);
+	}
 
 	// Change this to your theme text domain, used for internationalising strings
 	$theme_text_domain = 'sof';
@@ -112,6 +118,6 @@ function sof_register_required_plugins() {
 		)
 	);
 
-	tgmpa( $plugins, $config );
+	tgmpa( array($plugin), $config );
 
 }

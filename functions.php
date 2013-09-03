@@ -4,7 +4,6 @@
 // Include theme options panel
 /*-----------------------------------------------------------------------------------*/
 get_template_part( "tgm", "init" );
-//get_template_part( "options", "init" );
 
 $plugins = get_option('active_plugins');
 foreach (get_option('active_plugins') as $plugin) {
